@@ -1,0 +1,51 @@
+package com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.adapter
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.androidunittest_roomdatabasetestingroomdb.R
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.models.ProductListItem
+
+class ProductAdapter(
+    private var productListItem: List<ProductListItem>
+) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
+
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): ProductViewHolder {
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.layout_product_item, parent, false)
+        return ProductViewHolder(view)
+
+    }
+
+    override fun onBindViewHolder(
+        holder: ProductViewHolder,
+        position: Int
+    ) {
+        val product = productListItem[position]
+        holder.text?.text = product.title
+        holder.textPrice?.text = product.price.toString()
+        Glide.with(holder.image!!.context ).load(product.image).into(holder.image)
+    }
+
+    override fun getItemCount(): Int {
+        return productListItem.size
+    }
+
+    class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val image: ImageView? = itemView.findViewById<ImageView>(R.id.imageView)
+        val text: TextView? = itemView.findViewById<TextView>(R.id.textView)
+        val textPrice: TextView? = itemView.findViewById<TextView>(R.id.productPrice)
+
+    }
+    fun updateData(newItems: List<ProductListItem>) {
+        productListItem = newItems
+        notifyDataSetChanged()
+    }
+}

@@ -5,12 +5,6 @@
       <SelectionState runConfigName="Android(Unit_Test_-_Room_Database__Testing_Room_DB.app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="insertQuote_expected_singleQuote()">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="deleteQuote_expected_noResult()">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
     </selectionStates>
   </component>
 </project>
