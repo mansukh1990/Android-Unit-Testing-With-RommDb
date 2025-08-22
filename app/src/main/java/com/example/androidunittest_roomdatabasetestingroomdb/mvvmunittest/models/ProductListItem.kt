@@ -1,4 +1,4 @@
-package com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.models
+package com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.models
 
 data class ProductListItem(
     val image: String,

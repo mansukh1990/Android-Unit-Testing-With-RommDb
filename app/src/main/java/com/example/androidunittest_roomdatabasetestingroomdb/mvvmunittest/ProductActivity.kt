@@ -1,18 +1,17 @@
-package com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest
+package com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidunittest_roomdatabasetestingroomdb.R
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.adapter.ProductAdapter
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.utils.NetworkResult
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.viewmodel.MainViewModel
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.viewmodel.MainViewModelFactory
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.adapter.ProductAdapter
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.utils.NetworkResult
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.viewmodel.MainViewModel
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.viewmodel.MainViewModelFactory
 
 class ProductActivity : AppCompatActivity() {
 
@@ -35,6 +34,8 @@ class ProductActivity : AppCompatActivity() {
         viewModel =
             ViewModelProvider(this, MainViewModelFactory(repository))[MainViewModel::class.java]
 
+        viewModel.getProducts()
+
         viewModel.products.observe(this) {
             when (it) {
                 is NetworkResult.Loading -> {
@@ -51,7 +52,7 @@ class ProductActivity : AppCompatActivity() {
                 }
             }
         }
-        viewModel.getProducts()
+
 
     }
 }

@@ -1,9 +1,9 @@
-package com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.repository
+package com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.repository
 
 import android.util.Log
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.api.ProductApi
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.models.ProductListItem
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.utils.NetworkResult
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.api.ProductApi
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.models.ProductListItem
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.utils.NetworkResult
 
 class ProductRepository(
     private val productApi: ProductApi

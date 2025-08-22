@@ -4,9 +4,9 @@ import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
-import com.example.androidunittest_roomdatabasetestingroomdb.TestWithRoomDb.Quote
-import com.example.androidunittest_roomdatabasetestingroomdb.TestWithRoomDb.QuoteDatabase
-import com.example.androidunittest_roomdatabasetestingroomdb.TestWithRoomDb.QuotesDao
+import com.example.androidunittest_roomdatabasetestingroomdb.UnitTestWithRoomDb.Quote
+import com.example.androidunittest_roomdatabasetestingroomdb.UnitTestWithRoomDb.QuoteDatabase
+import com.example.androidunittest_roomdatabasetestingroomdb.UnitTestWithRoomDb.QuotesDao
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Assert

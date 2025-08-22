@@ -1,8 +1,8 @@
-package com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.viewmodel
+package com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.repository.ProductRepository
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.repository.ProductRepository
 
 class MainViewModelFactory(
     private val productRepository: ProductRepository

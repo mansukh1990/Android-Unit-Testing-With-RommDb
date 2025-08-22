@@ -91,7 +91,7 @@ dependencies {
 
     //Mockito
     testImplementation("org.mockito:mockito-core: 5.18.0")
-    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:6.0.0")
     testImplementation("com.squareup.okhttp3:mockwebserver3:5.1.0")
 
     //glide

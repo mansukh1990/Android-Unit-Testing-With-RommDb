@@ -1,8 +1,8 @@
-package com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest
+package com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest
 
 import android.app.Application
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.api.ProductApi
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.repository.ProductRepository
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.api.ProductApi
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.repository.ProductRepository
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

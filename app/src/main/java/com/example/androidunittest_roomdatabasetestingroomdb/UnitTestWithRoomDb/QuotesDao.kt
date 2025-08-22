@@ -1,4 +1,4 @@
-package com.example.androidunittest_roomdatabasetestingroomdb.TestWithRoomDb
+package com.example.androidunittest_roomdatabasetestingroomdb.UnitTestWithRoomDb
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

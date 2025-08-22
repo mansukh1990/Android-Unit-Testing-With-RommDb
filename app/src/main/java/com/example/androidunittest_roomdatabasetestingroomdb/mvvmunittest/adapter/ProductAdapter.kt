@@ -1,4 +1,4 @@
-package com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.adapter
+package com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.androidunittest_roomdatabasetestingroomdb.R
-import com.example.androidunittest_roomdatabasetestingroomdb.mvvmtest.models.ProductListItem
+import com.example.androidunittest_roomdatabasetestingroomdb.mvvmunittest.models.ProductListItem
 
 class ProductAdapter(
     private var productListItem: List<ProductListItem>
@@ -30,7 +30,7 @@ class ProductAdapter(
     ) {
         val product = productListItem[position]
         holder.text?.text = product.title
-        holder.textPrice?.text = product.price.toString()
+        holder.textPrice?.text = "$${product.price}"
         Glide.with(holder.image!!.context ).load(product.image).into(holder.image)
     }
 
